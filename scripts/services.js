@@ -1,15 +1,28 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const services = document.querySelectorAll('.service');
-
-    services.forEach(function(service) {
-        const header = service.querySelector('.header'); // Get the header element within each service
-
-        console.log(header); // Check if the header is correctly selected
-
-        header.addEventListener('click', function() {
-            console.log("Clicked!"); // Check if the click event is triggered
-
-            service.classList.toggle('active'); // Toggle the 'active' class for the clicked service
+document.addEventListener('DOMContentLoaded', function () {
+    const tabs = document.querySelectorAll('.tab');
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const tabId = tab.getAttribute('data-tab');
+            console.log('Clicked tab:', tabId);
+            showContent(tabId);
         });
     });
+
+    function showContent(tabId) {
+        console.log('Showing content for tab:', tabId);
+        const contents = document.querySelectorAll('.content');
+        contents.forEach(content => {
+            content.classList.remove('active');
+        });
+
+        const activeContent = document.getElementById(tabId);
+        if (activeContent) {
+            activeContent.classList.add('active');
+        } else {
+            console.log('Content not found for tab:', tabId);
+        }
+    }
+
+    // Show initial content (e.g., first tab)
+    showContent(tabs[0].getAttribute('data-tab'));
 });

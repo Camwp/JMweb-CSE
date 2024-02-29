@@ -82,55 +82,55 @@
     </section>
 
     <section id="our-services">
-        <div>
-            <h1>DIVERSE ENGINEERING PROJECT OFFERINGS</h1>
-            <ul>
-                <li>
-                    <input type="checkbox" checked>
-                    <i></i>
-                    <h2>CONSTRUCTION MANAGEMENT</h2>
-                    <p>From land development to build-out we are an extension
-                        of your team, ensuring your goals are achieved on time
-                        and on budget.</p>
-                </li>
-                <li>
-                    <input type="checkbox" checked>
-                    <i></i>
-                    <h2>CIVIL ENGINEERING</h2>
-                    <p>We assess and determine the best site layout to maximize
-                        the return on your investment and quickly move through the
-                        permitting process with local, state, and federal agencies—
-                        helping you stay on schedule.</p>
-                </li>
-                <li>
-                    <input type="checkbox" checked>
-                    <i></i>
-                    <h2>DEVELOPMENT</h2>
-                    <p>Our development team provides the due diligence you
-                        need to make initial decisions and eliminate any surprises.
-                        JM Civil Engineering development services include master
-                        planning, entitlement services, and permitting services.</p>
-                </li>
-                <li>
-                    <input type="checkbox" checked>
-                    <i></i>
-                    <h2>LAND SURVEY</h2>
-                    <p>We offer a variety services: ALTA/NSPS land title surveys,
-                        subdivision platting, boundary surveys, topographic surveys,
-                        lot surveys, construction staking, and more. </p>
-                </li>
-
-                <li>
-                    <input type="checkbox" checked>
-                    <i></i>
-                    <h2>PLANNING</h2>
-                    <p>We seek to understand your needs and site constraints
-                        to create a site design with practical solutions to meet
-                        your objectives.</p>
-                </li>
-            </ul>
+        <div class="tabs">
+            <div class="tab" data-tab="construction">
+                <h2>CONSTRUCTION MANAGEMENT</h2>
+            </div>
+            <div class="tab" data-tab="civil">
+                <h2>CIVIL ENGINEERING</h2>
+            </div>
+            <div class="tab" data-tab="development">
+                <h2>DEVELOPMENT</h2>
+            </div>
+            <div class="tab" data-tab="survey">
+                <h2>LAND SURVEY</h2>
+            </div>
+            <div class="tab" data-tab="planning">
+                <h2>PLANNING</h2>
+            </div>
+        </div>
+        <div class="tab-content">
+            <div id="construction" class="content active">
+                <p>From land development to build-out we are an extension
+                    of your team, ensuring your goals are achieved on time
+                    and on budget.</p>
+            </div>
+            <div id="civil" class="content">
+                <p>We assess and determine the best site layout to maximize
+                    the return on your investment and quickly move through the
+                    permitting process with local, state, and federal agencies—
+                    helping you stay on schedule.</p>
+            </div>
+            <div id="development" class="content">
+                <p>Our development team provides the due diligence you
+                    need to make initial decisions and eliminate any surprises.
+                    JM Civil Engineering development services include master
+                    planning, entitlement services, and permitting services.</p>
+            </div>
+            <div id="survey" class="content">
+                <p>We offer a variety services: ALTA/NSPS land title surveys,
+                    subdivision platting, boundary surveys, topographic surveys,
+                    lot surveys, construction staking, and more. </p>
+            </div>
+            <div id="planning" class="content">
+                <p>We seek to understand your needs and site constraints
+                    to create a site design with practical solutions to meet
+                    your objectives.</p>
+            </div>
         </div>
     </section>
+
+
     <section id="split-image">
         <div>
             <img src="images/services/jitb.jpg">
@@ -211,6 +211,7 @@
     crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="scripts/common.js"></script>
+<script src="scripts/services.js"></script>
 
 
 </html>
