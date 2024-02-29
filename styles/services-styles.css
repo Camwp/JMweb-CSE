@@ -33,22 +33,58 @@ h2 {
 }
 
 #our-services {
-  display: flex;
-  flex-direction: column;
+  display: block;
+
   align-items: center;
   justify-content: center;
-  height: 20vw;
+  @media (max-width: 1336px){
+    width: 90%;
+    margin: auto;
+    
+  }
 }
 
 #our-services .tabs {
   display: flex;
   width: 80%;
   justify-content: center;
+  margin-top: 3rem;
+  @media (max-width: 1336px) {
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 1336px) {
+  #our-services .tabs {
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #our-services .tabs .tab:last-child {
+    grid-column: span 2; /* Spanning two columns for the last tab */
+  }
+}
+
+#our-services .tab-content {
+  margin-bottom: 3rem;
+  border-radius: 0 5px 5px 0px;
+  padding: 20px;
+  height: 10vh;
+  border-left: 2px solid var(--header-color);
+  @media (max-width: 1336px) {
+    margin-bottom: 5rem;
+    width: 100%;
+  }
 }
 
 #our-services h1,
 #our-services h2 {
   color: var(--secondary-color);
+  
 }
 
 #our-services h1 {
@@ -68,15 +104,16 @@ h2 {
   /*background-color: #fafeff;*/
   margin: 0;
   cursor: pointer;
+  @media (max-width: 1336px) {
+    font-size: 18px;
+  }
 }
 
 #our-services h2 {
   color: var(--header-color);
 }
 
-#our-services .tabs {
-  display: flex;
-}
+
 
 #our-services .tab {
   cursor: pointer;
@@ -84,18 +121,14 @@ h2 {
   background-color: #f0f0f0;
   margin-right: 10px;
   border-radius: 5px 5px 0 0;
+  @media (max-width: 1336px) {
+    border-radius: 5px 5px 5px 5px;
+    margin: 0 5px 5px;
+  }
 }
 
 #our-services .tab:hover {
   background-color: #e0e0e0;
-}
-
-#our-services .tab-content {
-  width: 80%;
-  border-radius: 0 5px 5px 0px;
-  padding: 20px;
-  height: 10vh;
-  border-left: 2px solid var(--header-color);
 }
 
 #our-services .content {
@@ -233,17 +266,6 @@ hr {
     height: 30vh;
   }
 
-  #our-services {
-    margin-top: 2em;
-  }
-
-  #our-services div {
-    margin: auto 10vw;
-  }
-
-  #our-services p {
-    padding: 0 10vw;
-  }
 
   #industries {
     display: block;
