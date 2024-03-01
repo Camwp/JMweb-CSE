@@ -37,10 +37,11 @@ h2 {
 
   align-items: center;
   justify-content: center;
-  @media (max-width: 1336px){
+
+  @media (max-width: 1336px) {
     width: 90%;
     margin: auto;
-    
+
   }
 }
 
@@ -49,6 +50,8 @@ h2 {
   width: 80%;
   justify-content: center;
   margin-top: 3rem;
+  margin: auto;
+
   @media (max-width: 1336px) {
     width: 100%;
     text-align: center;
@@ -56,6 +59,7 @@ h2 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media (max-width: 1336px) {
   #our-services .tabs {
     width: 100%;
@@ -65,7 +69,8 @@ h2 {
   }
 
   #our-services .tabs .tab:last-child {
-    grid-column: span 2; /* Spanning two columns for the last tab */
+    grid-column: span 2;
+    /* Spanning two columns for the last tab */
   }
 }
 
@@ -75,6 +80,9 @@ h2 {
   padding: 20px;
   height: 10vh;
   border-left: 2px solid var(--header-color);
+  width: 80%;
+  margin: auto;
+
   @media (max-width: 1336px) {
     margin-bottom: 5rem;
     width: 100%;
@@ -84,7 +92,7 @@ h2 {
 #our-services h1,
 #our-services h2 {
   color: var(--secondary-color);
-  
+
 }
 
 #our-services h1 {
@@ -98,19 +106,17 @@ h2 {
 #our-services h2 {
   font-size: 26px;
   line-height: 34px;
-  font-weight: 300;
+  font-weight: 600;
   letter-spacing: 1px;
   display: block;
   /*background-color: #fafeff;*/
   margin: 0;
   cursor: pointer;
-  @media (max-width: 1336px) {
-    font-size: 18px;
-  }
-}
-
-#our-services h2 {
   color: var(--header-color);
+
+  @media (max-width: 1336px) {
+    font-size: 14px;
+  }
 }
 
 
@@ -121,6 +127,7 @@ h2 {
   background-color: #f0f0f0;
   margin-right: 10px;
   border-radius: 5px 5px 0 0;
+
   @media (max-width: 1336px) {
     border-radius: 5px 5px 5px 5px;
     margin: 0 5px 5px;
