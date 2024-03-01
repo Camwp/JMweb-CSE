@@ -49,8 +49,9 @@ h2 {
   display: flex;
   width: 80%;
   justify-content: center;
-  margin-top: 3rem;
+
   margin: auto;
+  margin-top: 3rem;
 
   @media (max-width: 1336px) {
     width: 100%;
@@ -75,13 +76,14 @@ h2 {
 }
 
 #our-services .tab-content {
-  margin-bottom: 3rem;
+
   border-radius: 0 5px 5px 0px;
   padding: 20px;
   height: 10vh;
   border-left: 2px solid var(--header-color);
   width: 80%;
   margin: auto;
+  margin-bottom: 3rem;
 
   @media (max-width: 1336px) {
     margin-bottom: 5rem;
