@@ -75,6 +75,13 @@ h2 {
   }
 }
 
+.tab.active {
+  background-color: #e0e0e0 !important;
+  /* your desired color here */
+  /* Add any other styling for the active tab */
+}
+
+
 #our-services .tab-content {
 
   border-radius: 0 5px 5px 0px;

@@ -212,6 +212,20 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="scripts/common.js"></script>
 <script src="scripts/services.js"></script>
+<script>
+    // Get all tabs
+    const tabs = document.querySelectorAll('.tab');
 
+    // Add click event listener to each tab
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            // Remove 'active' class from all tabs
+            tabs.forEach(t => t.classList.remove('active'));
+
+            // Add 'active' class to the clicked tab
+            tab.classList.add('active');
+        });
+    });
+</script>
 
 </html>
